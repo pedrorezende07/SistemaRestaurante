@@ -1,4 +1,4 @@
-import java.awt.*;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -7,7 +7,7 @@ import utils.*;
 
 public class Main {
     private static List<Garcom> BD_Garcom = new ArrayList<>();// array para salvar os dados
-    private static List<Mesa> BD_Mesa = new ArrayList<>();
+    //private static List<Mesa> BD_Mesa = new ArrayList<>();
 
 
     public static void main(String[] args) {
@@ -46,6 +46,7 @@ public class Main {
                     float salarioFixo = sc.nextFloat();
                     Garcom g = new Garcom(idGarcom, nome, cpf, dtaNascimento, email, telefone, sexo, salarioFixo, null);
 
+
                     GravarGarcom(g);
                     break;
                 }
@@ -53,6 +54,7 @@ public class Main {
                     Scanner sc = new Scanner(System.in);
                     System.out.print("Informar o garcom a ser editado pelo ID: ");
                     int idGarcom = sc.nextInt();
+                    
                     EditarGarcom(idGarcom);
                     break;
                 }
@@ -63,7 +65,7 @@ public class Main {
 
                 }
                 case 4: {
-                    System.out.println("so para commitar aqui");
+                    
                     
                 }
                 case 5: {
@@ -101,6 +103,7 @@ public class Main {
             Menu();
             loop = loopOn.nextInt();
         }
+    
     }
 
     public static void GravarGarcom(Garcom g) {
@@ -184,6 +187,7 @@ public class Main {
             }
         }
         System.out.printf("Retornando ao menu principal...");
+        sc.close();
     }
 
 
