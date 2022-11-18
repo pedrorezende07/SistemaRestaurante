@@ -63,6 +63,7 @@ public class Main {
 
                 }
                 case 4: {
+                    System.out.println("so para commitar aqui");
                     
                 }
                 case 5: {
@@ -112,7 +113,7 @@ public class Main {
             System.out.println("Erro ao salvar Garcom");
         }
     }
-    public static void EditarGarcom(int idGarcom) { //percorrer o vetor de garcom e descobrir qual tem o id X, dps disso informar qual vetor estaremos mudando os dados
+    public static void EditarGarcom(int idGarcom) { //percorrer o vetor de garcomaa e descobrir qual tem o id X, dps disso informar qual vetor estaremos mudando os dados
         Scanner sc = new Scanner(System.in);
         int loop = 10;
         Integer varGarcom = null;
